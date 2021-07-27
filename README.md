@@ -195,4 +195,4 @@ The bot is based on the original work done by [PaulSonOfLars](https://github.com
 
 
 
-## [OWNER HERO](http://t.me/HEROGAMERS1)
+## [OWNER PAIN](http://t.me/Pain_to_this_world)
