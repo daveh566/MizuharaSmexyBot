@@ -47,3 +47,31 @@ defaults set in the sample_config, hence making it easier to upgrade.
 An example `config.py` file could be:
 ```
 from LaylaRobot.sample_config import Config
+  class Development(Config):
+    OWNER_ID = 254318997  # your telegram ID
+    OWNER_USERNAME = "SonOfLars"  # your telegram username
+    API_KEY = "your bot api key"  # your api key, as provided by the @botfather
+    SQLALCHEMY_DATABASE_URI = 'postgresql://username:password@localhost:5432/database'  # sample db credentials
+    MESSAGE_DUMP = '-1234567890' # some group chat that your bot is a member of
+    USE_MESSAGE_DUMP = True
+    SUDO_USERS = [18673980, 83489514]  # List of id's for users which have sudo access to the bot.
+    LOAD = []
+    NO_LOAD = ['translation']
+```
+
+If you can't have a config.py file (EG on Heroku), it is also possible to use environment variables.
+The following env variables are supported:
+ - `ENV`: Setting this to ANYTHING will enable env variables
+
+ - `TOKEN`: Your bot token, as a string.
+ - `OWNER_ID`: An integer of consisting of your owner ID
+ - `OWNER_USERNAME`: Your username
+
+ - `DATABASE_URL`: Your database URL
+ - `MESSAGE_DUMP`: optional: a chat where your replied saved messages are stored, to stop people deleting their old 
+ - `LOAD`: Space-separated list of modules you would like to load
+ - `NO_LOAD`: Space-separated list of modules you would like NOT to load
+ - `WEBHOOK`: Setting this to ANYTHING will enable webhooks when in env mode
+ messages
+ - `URL`: The URL your webhook should connect to (only needed for webhook mode)
+
