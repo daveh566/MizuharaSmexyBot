@@ -95,5 +95,58 @@ Install the necessary Python dependencies by moving to the project directory and
 `pip3 install -r requirements.txt`.
 
 This will install all the necessary python packages.
+### Database
 
+If you wish to use a database-dependent module (eg: locks, notes, userinfo, users, filters, welcomes),
+you'll need to have a database installed on your system. I use Postgres, so I recommend using it for optimal compatibility.
+
+In the case of Postgres, this is how you would set up a database on a Debian/ubuntu system. Other distributions may vary.
+
+- install postgresql:
+
+`sudo apt-get update && sudo apt-get install postgresql`
+
+- change to the Postgres user:
+
+`sudo su - postgres`
+
+- create a new database user (change YOUR_USER appropriately):
+
+`createuser -P -s -e YOUR_USER`
+
+This will be followed by you need to input your password.
+
+- create a new database table:
+
+`createdb -O YOUR_USER YOUR_DB_NAME`
+
+Change YOUR_USER and YOUR_DB_NAME appropriately.
+
+- finally:
+
+`psql YOUR_DB_NAME -h YOUR_HOST YOUR_USER`
+
+This will allow you to connect to your database via your terminal.
+By default, YOUR_HOST should be 0.0.0.0:5432.
+
+You should now be able to build your database URI. This will be:
+
+`sqldbtype://username:pw@hostname:port/db_name`
+
+Replace sqldbtype with whichever DB you're using (eg Postgres, MySQL, SQLite, etc)
+repeat for your username, password, hostname (localhost?), port (5432?), and DB name.
+
+  ## Modules
+   ### Setting load order.
+
+The module load order can be changed via the `LOAD` and `NO_LOAD` configuration settings.
+These should both represent lists.
+
+If `LOAD` is an empty list, all modules in `modules/` will be selected for loading by default.
+
+If `NO_LOAD` is not present or is an empty list, all modules selected for loading will be loaded.
+
+If a module is in both `LOAD` and `NO_LOAD`, the module will not be loaded - `NO_LOAD` takes priority.
+
+   
 
