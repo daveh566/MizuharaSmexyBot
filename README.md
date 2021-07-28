@@ -148,5 +148,50 @@ If `NO_LOAD` is not present or is an empty list, all modules selected for loadin
 
 If a module is in both `LOAD` and `NO_LOAD`, the module will not be loaded - `NO_LOAD` takes priority.
 
-   
+     ### Creating your own modules.
+
+Creating a module has been simplified as much as possible - but do not hesitate to suggest further simplification.
+
+All that is needed is that your .py file is in the modules folder.
+
+To add commands, make sure to import the dispatcher via
+
+`from LaylaRobot import dispatcher`.
+
+You can then add commands using the usual
+
+`dispatcher.add_handler()`.
+
+Assigning the `__help__` variable to a string describing this modules' available
+commands will allow the bot to load it and add the documentation for
+your module to the `/help` command. Setting the `__mod_name__` variable will also allow you to use a nicer, user-friendly name for a module.
+
+The `__migrate__()` function is used for migrating chats - when a chat is upgraded to a supergroup, the ID changes, so 
+it is necessary to migrate it in the DB.
+
+The `__stats__()` function is for retrieving module statistics, eg number of users, number of chats. This is accessed 
+through the `/stats` command, which is only available to the bot owner.
+
+## Starting the bot.
+
+Once you've set up your database and your configuration is complete, simply run the bat file(if on windows) or run (Linux):
+
+`python3 -m MizuharaSmexyBot`
+
+You can use [nssm](https://nssm.cc/usage) to install the bot as service on windows and set it to restart on /gitpull 
+Make sure to edit the start and restart bats to your needs. 
+Note: the restart bat requires that User account control be disabled.
+
+For queries or any issues regarding the bot please open an issue ticket or visit us at [Support](https://t.m/PAIN_TO_THIS_WORLD)
+## How to setup on Heroku 
+For starters click on this button 
+</details>  
+
+## Credits
+The bot is based on the original work done by [PaulSonOfLars](https://github.com/PaulSonOfLars)
+
+
+
+## [OWNER PAIN](http://t.me/Pain_to_this_world)
+
 
