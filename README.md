@@ -36,7 +36,7 @@ This is because markdown parsing is done by iterating through a dict, which is o
 There are two possible ways of configuring your bot: a config.py file, or ENV variables.
 
 The preferred version is to use a `config.py` file, as it makes it easier to see all your settings grouped together.
-This file should be placed in your `LaylaRobot` folder, alongside the `__main__.py` file. 
+This file should be placed in your `MizuharaSmexyBot` folder, alongside the `__main__.py` file. 
 This is where your bot token will be loaded from, as well as your database URI (if you're using a database), and most of 
 your other settings.
 
@@ -47,13 +47,13 @@ An example `config.py` file could be:
 ```
 from LaylaRobot.sample_config import Config
   class Development(Config):
-    OWNER_ID = 254318997  # your telegram ID
+    OWNER_ID = 1332331113  # your telegram ID
     OWNER_USERNAME = "SonOfLars"  # your telegram username
     API_KEY = "your bot api key"  # your api key, as provided by the @botfather
     SQLALCHEMY_DATABASE_URI = 'postgresql://username:password@localhost:5432/database'  # sample db credentials
     MESSAGE_DUMP = '-1234567890' # some group chat that your bot is a member of
     USE_MESSAGE_DUMP = True
-    SUDO_USERS = [18673980, 83489514]  # List of id's for users which have sudo access to the bot.
+    SUDO_USERS = [1332331113, 83489514]  # List of id's for users which have sudo access to the bot.
     LOAD = []
     NO_LOAD = ['translation']
 ```
