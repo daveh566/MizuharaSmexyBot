@@ -1,7 +1,7 @@
 {
-      "name": "Layla Robot",
+      "name": "MizuharaSmexyBot",
       "description": "Telegram group management bot.",
-      "logo": "https://telegra.ph/file/8f6b24120aab8490dca45.jpg",
+      "logo": "https://telegra.ph/file/923ca8d23025ee79ec78a.jpg",
       "keywords": [
          "telegram",
          "anime",
@@ -9,7 +9,7 @@
          "manager",
          "Layla"
       ],   
-   "repository": "https://github.com/QueenArzoo/LaylaRobot.git",
+   "repository": "https://github.com/AnuragSharma080/MizuharaSmexyBot",
    "addons": [
       {
          "options": {
@@ -28,7 +28,7 @@
   ],  
    "env": {
       "TOKEN": {
-         "description": "Your bot token. Get one from @BotFather duh",
+         "description": "Your bot token. Get one from @BotFather Bro",
          "required": true,
          "value": ""
       },
@@ -50,7 +50,7 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "797768146"
+         "value": "1332331113"
       },
       "BOT_ID": {
          "description": "Your bot ID.. Use any other bot to get it.",
@@ -67,7 +67,7 @@
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "HEROGAMERS1"
+         "value": "Pain_to_this_world"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
@@ -115,7 +115,7 @@
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Masha support then keep the current ID's here at they are and add yours.",
          "required": false,
-         "value": "797768146"
+         "value": "1332331113"
       },
       "sw_api": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
@@ -182,7 +182,7 @@
       "DONATION_LINK": {
          "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it linking to paul",
          "required": false,
-         "value": "https://t.me/Laylalist"
+         "value": "https://t.me/project_tsukinomi"
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
