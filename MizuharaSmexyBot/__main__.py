@@ -4,7 +4,7 @@ import re
 from sys import argv
 from typing import Optional
 
-from LaylaRobot import (
+from MizuharaSmexyBot import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -103,6 +103,7 @@ buttons = [
 
 
 HELP_STRINGS = """
+``https://telegra.ph/file/923ca8d23025ee79ec78a.jpg`
 `Hi.. I'M` Mizuhara
 `ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`
 Powered by :- [Akatsuki](t.me/project_tsukinomi)"""
