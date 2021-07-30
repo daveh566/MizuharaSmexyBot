@@ -65,11 +65,11 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/LaylaRobot
-RUN git clone -b shiken https://github.com/QueenArzoo/LaylaRobot /root/LaylaRobot
-WORKDIR /root/LaylaRobot
+RUN git clone -b shiken https://github.com/AnuragSharma080/MizuharaSmexyBot /root/MizuharaSmexyBot
+WORKDIR /root/MizuharaSmexyBot
 
 #Copy config file to /root/LaylaRobot/LaylaRobot
-COPY ./LaylaRobot/sample_config.py ./LaylaRobot/config.py* /root/LaylaRobot/LaylaRobot/
+COPY ./MizuharaSmexyBot/sample_config.py ./MizuharaSmexyBot/config.py* /root/MizuharaSmexybot/MizuharaSmexybot/
 
 ENV PATH="/home/bot/bin:$PATH"
 
