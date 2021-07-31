@@ -1,17 +1,17 @@
 import html
 from typing import Optional
 
-import LaylaRobot.modules.sql.blsticker_sql as sql
-from LaylaRobot import LOGGER, dispatcher
-from LaylaRobot.modules.connection import connected
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
-from LaylaRobot.modules.helper_funcs.alternate import send_message
-from LaylaRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from LaylaRobot.modules.helper_funcs.misc import split_message
-from LaylaRobot.modules.helper_funcs.string_handling import extract_time
+import MizuharaSmexyBot.modules.sql.blsticker_sql as sql
+from MizuharaSmexyBot import LOGGER, dispatcher
+from MizuharaSmexyBot.modules.connection import connected
+from MizuharaSmexyBot.modules.disable import DisableAbleCommandHandler
+from MizuharaSmexyBot.modules.helper_funcs.alternate import send_message
+from MizuharaSmexyBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from MizuharaSmexyBot.modules.helper_funcs.misc import split_message
+from MizuharaSmexyBot.modules.helper_funcs.string_handling import extract_time
 
-from LaylaRobot.modules.log_channel import loggable
-from LaylaRobot.modules.warns import warn
+from MizuharaSmexyBot.modules.log_channel import loggable
+from MizuharaSmexyBot.modules.warns import warn
 from telegram import Chat, Message, ParseMode, Update, User, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler
