@@ -12,9 +12,9 @@ from pyrogram.errors.exceptions.bad_request_400 import (
 )
 from pyrogram.types import ChatPermissions, InlineKeyboardButton, InlineKeyboardMarkup
 
-from LaylaRobot import DRAGONS as SUDO_USERS
-from LaylaRobot import pbot
-from LaylaRobot.modules.sql_extended import forceSubscribe_sql as sql
+from MizuharaSmexyBot import DRAGONS as SUDO_USERS
+from MizuharaSmexyBot import pbot
+from MizuharaSmexyBot.modules.sql_extended import forceSubscribe_sql as sql
 
 logging.basicConfig(level=logging.INFO)
 
@@ -181,7 +181,7 @@ def config(client, message):
 
 __help__ = """
 *Force Subscribe:*
-❍ Layla can mute members who are not subscribed your channel until they subscribe
+❍ Mizuhara can mute members who are not subscribed your channel until they subscribe
 ❍ When enabled I will mute unsubscribed members and show them a unmute button. When they pressed the button I will unmute them
 *Setup*
 *Only creator*
