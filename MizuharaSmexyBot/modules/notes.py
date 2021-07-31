@@ -3,14 +3,14 @@ from io import BytesIO
 import random
 from typing import Optional
 
-import LaylaRobot.modules.sql.notes_sql as sql
-from LaylaRobot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
-from LaylaRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from LaylaRobot.modules.helper_funcs.chat_status import user_admin, connection_status
-from LaylaRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from LaylaRobot.modules.helper_funcs.msg_types import get_note_type
-from LaylaRobot.modules.helper_funcs.string_handling import (
+import MizuharaSmexyBot.modules.sql.notes_sql as sql
+from MizuharaSmexyBot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
+from MizuharaSmexyBot.modules.disable import DisableAbleCommandHandler
+from MizuharaSmexyBot.modules.helper_funcs.handlers import MessageHandlerChecker
+from MizuharaSmexyBot.modules.helper_funcs.chat_status import user_admin, connection_status
+from MizuharaSmexyBot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from MizuharaSmexyBot.modules.helper_funcs.msg_types import get_note_type
+from MizuharaSmexyBot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
 )
 from telegram import (
@@ -251,7 +251,7 @@ def slash_get(update: Update, context: CallbackContext):
         note_name = str(noteid).strip(">").split()[1]
         get(update, context, note_name, show_none=False)
     except IndexError:
-        update.effective_message.reply_text("Wrong Note ID 😾")
+        update.effective_message.reply_text("Wrong Note ID ⚰️")
 
 
 @run_async
