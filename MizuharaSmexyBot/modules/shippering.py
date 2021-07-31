@@ -1,5 +1,5 @@
-from LaylaRobot import pbot as app
-from LaylaRobot.utils.dbfunc import get_couple, save_couple
+from MizuharaSmexyBot import pbot as app
+from MizuharaSmexyBot.utils.dbfunc import get_couple, save_couple
 from pyrogram import filters
 import random
 from datetime import datetime
