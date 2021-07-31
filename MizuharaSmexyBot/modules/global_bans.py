@@ -14,9 +14,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import LaylaRobot.modules.sql.global_bans_sql as sql
-from LaylaRobot.modules.sql.users_sql import get_user_com_chats
-from LaylaRobot import (
+import MizuharaSmexyBot.modules.sql.global_bans_sql as sql
+from MizuharaSmexyBot.modules.sql.users_sql import get_user_com_chats
+from MizuharaSmexyBot import (
     DEV_USERS,
     EVENT_LOGS,
     OWNER_ID,
