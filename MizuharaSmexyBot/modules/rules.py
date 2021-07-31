@@ -1,9 +1,9 @@
 from typing import Optional
 
-import LaylaRobot.modules.sql.rules_sql as sql
-from LaylaRobot import dispatcher
-from LaylaRobot.modules.helper_funcs.chat_status import user_admin
-from LaylaRobot.modules.helper_funcs.string_handling import markdown_parser
+import MizuharaSmexyBot.modules.sql.rules_sql as sql
+from MizuharaSmexyBot import dispatcher
+from MizuharaSmexyBot.modules.helper_funcs.chat_status import user_admin
+from MizuharaSmexyBot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
