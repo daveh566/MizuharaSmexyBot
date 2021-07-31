@@ -1,11 +1,11 @@
-from LaylaRobot import telethn as tbot
+from MizuharaSmexyBot import telethn as tbot
 import os
 import re
 import bs4
 import requests
 from telethon import types
 from telethon.tl import functions
-from LaylaRobot.events import register
+from MizuharaSmexyBot.events import register
 
 langi = "en"
 
