@@ -5,8 +5,8 @@ import os
 import heroku3
 import requests
 
-from LaylaRobot import telethn as borg, HEROKU_APP_NAME, HEROKU_API_KEY, OWNER_ID
-from LaylaRobot.events import register
+from MizuharaSmexyBot import telethn as borg, HEROKU_APP_NAME, HEROKU_API_KEY, OWNER_ID
+from MizuharaSmexyBot.events import register
 
 heroku_api = "https://api.heroku.com"
 Heroku = heroku3.from_key(HEROKU_API_KEY)
@@ -191,7 +191,7 @@ async def _(dyno):
         dyno.chat_id,
         "logs.txt",
         reply_to=dyno.id,
-        caption="Layla Bot Logz.",
+        caption="Mizuhara Bot Logz.",
     )
 
     await asyncio.sleep(5)
