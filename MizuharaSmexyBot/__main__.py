@@ -85,7 +85,7 @@ buttons = [
             text="➕️ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/MizuharaSmexyBot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="layla_"),
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="Mizuhara_"),
         InlineKeyboardButton(
             text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
@@ -111,7 +111,7 @@ Powered by :- [Akatsuki](t.me/project_tsukinomi)"""
 layla_IMG = "https://telegra.ph/file/923ca8d23025ee79ec78a.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project [Hero](t.me/Pain_to_this_world) \
+ You can support the project [Pain](t.me/Pain_to_this_world) \
  Supporting isnt always financial! [Akatsuki](t.me/project_tsukinomi) \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
