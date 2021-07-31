@@ -1,6 +1,6 @@
-import LaylaRobot.modules.sql.blacklistusers_sql as sql
-from LaylaRobot import ALLOW_EXCL
-from LaylaRobot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
+import MizuharaSemxyBot.modules.sql.blacklistusers_sql as sql
+from MizuharaSmexyBot import ALLOW_EXCL
+from MizuharaSmexyBot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
 
 from telegram import Update
 from telegram.ext import CommandHandler, MessageHandler, RegexHandler, Filters
