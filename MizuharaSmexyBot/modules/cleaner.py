@@ -1,15 +1,15 @@
 
 import html
 
-from LaylaRobot import ALLOW_EXCL, CustomCommandHandler, dispatcher
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
-from LaylaRobot.modules.helper_funcs.chat_status import (
+from MizuharaSmexyBot import ALLOW_EXCL, CustomCommandHandler, dispatcher
+from MizuharaSmexyBot.modules.disable import DisableAbleCommandHandler
+from MizuharaSmexyBot.modules.helper_funcs.chat_status import (
     bot_can_delete,
     connection_status,
     dev_plus,
     user_admin,
 )
-from LaylaRobot.modules.sql import cleaner_sql as sql
+from MizuharaSmexyBot.modules.sql import cleaner_sql as sql
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,
