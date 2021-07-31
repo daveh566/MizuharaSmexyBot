@@ -189,8 +189,8 @@ else:
 
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-telethn = TelegramClient("layla", API_ID, API_HASH)
-pbot = Client("laylapbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+telethn = TelegramClient("Mizuhara", API_ID, API_HASH)
+pbot = Client("Mizuharapbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
@@ -200,7 +200,7 @@ DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
-from MizuharaSmexyBot.modules.helper_funcs.handlers import (
+from MizuharaSmexyBot.modules.helper_funcs.handlers import (MizuharaSmexyBot
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
