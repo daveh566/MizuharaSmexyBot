@@ -6,18 +6,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-import LaylaRobot.modules.sql.blacklist_sql as sql
-from LaylaRobot import dispatcher, LOGGER
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
-from LaylaRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from LaylaRobot.modules.helper_funcs.extraction import extract_text
-from LaylaRobot.modules.helper_funcs.misc import split_message
-from LaylaRobot.modules.log_channel import loggable
-from LaylaRobot.modules.warns import warn
-from LaylaRobot.modules.helper_funcs.string_handling import extract_time
-from LaylaRobot.modules.connection import connected
-from LaylaRobot.modules.sql.approve_sql import is_approved
-from LaylaRobot.modules.helper_funcs.alternate import send_message, typing_action
+import MizuharaSmexyBot.modules.sql.blacklist_sql as sql
+from MizuharaSmexyBot import dispatcher, LOGGER
+from MizuharaSmexyBot.modules.disable import DisableAbleCommandHandler
+from MizuharaSmexyBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from MizuharaSmexyBot.modules.helper_funcs.extraction import extract_text
+from MizuharaSmexyBot.modules.helper_funcs.misc import split_message
+from MizuharaSmexyBot.modules.log_channel import loggable
+from MizuharaSmexyBot.modules.warns import warn
+from MizuharaSmexyBot.modules.helper_funcs.string_handling import extract_time
+from MizuharaSmexyBot.modules.connection import connected
+from MizuharaSmexyBot.modules.sql.approve_sql import is_approved
+from MizuharaSmexyBot.modules.helper_funcs.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 
