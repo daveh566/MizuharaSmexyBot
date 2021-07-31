@@ -1,14 +1,14 @@
 import os
 
-from LaylaRobot.modules.sql_extended.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
+from MizuharaSmexyBot.modules.sql_extended.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
 from telethon.tl.types import ChatBannedRights
 from apscheduler.schedulers.asyncio import AsyncIOScheduler 
 from telethon import functions
-from LaylaRobot.events import register
-from LaylaRobot import OWNER_ID
-from LaylaRobot import telethn as tbot
-from telethon import *
-from telethon import Button, custom, events
+from MizuharaSmexyBot.events import register
+from MizuharaSmexyBot import OWNER_ID
+from MizuharaSmexyBot import telethn as tbot
+from MizuharaSmexyBot import *
+from MizuharaSmexyBot import Button, custom, events
 
 hehes = ChatBannedRights(
     until_date=None,
