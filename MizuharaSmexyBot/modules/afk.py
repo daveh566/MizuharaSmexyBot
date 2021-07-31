@@ -1,12 +1,12 @@
 import random, html
 
-from LaylaRobot import dispatcher
-from LaylaRobot.modules.disable import (
+from MizuharaSmexyBot import dispatcher
+from MizuharaSmexyBot.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from LaylaRobot.modules.sql import afk_sql as sql
-from LaylaRobot.modules.users import get_user_id
+from MizuharaSmexyBot.modules.sql import afk_sql as sql
+from MizuharaSmexyBot.modules.users import get_user_id
 from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler, run_async
