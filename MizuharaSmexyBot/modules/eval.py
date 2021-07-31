@@ -6,8 +6,8 @@ import textwrap
 import traceback
 from contextlib import redirect_stdout
 
-from LaylaRobot import LOGGER, dispatcher
-from LaylaRobot.modules.helper_funcs.chat_status import dev_plus
+from MizuharaSmexyBot import LOGGER, dispatcher
+from MizuharaSmexyBot.modules.helper_funcs.chat_status import dev_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
@@ -76,7 +76,7 @@ def do(func, bot, update):
 
     os.chdir(os.getcwd())
     with open(
-        os.path.join(os.getcwd(), "LaylaRobot/modules/helper_funcs/temp.txt"), "w"
+        os.path.join(os.getcwd(), "MizuharaSmexyBot/modules/helper_funcs/temp.txt"), "w"
     ) as temp:
         temp.write(body)
 
