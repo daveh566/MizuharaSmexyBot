@@ -1,9 +1,9 @@
 from time import sleep
 
-import LaylaRobot.modules.sql.global_bans_sql as gban_sql
-import LaylaRobot.modules.sql.users_sql as user_sql
-from LaylaRobot import DEV_USERS, OWNER_ID, dispatcher
-from LaylaRobot.modules.helper_funcs.chat_status import dev_plus
+import MizuharaSmexyBot.modules.sql.global_bans_sql as gban_sql
+import MizuharaSmexyBot.modules.sql.users_sql as user_sql
+from MizuharaSmexyBot import DEV_USERS, OWNER_ID, dispatcher
+from MizuharaSmexyBot.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
