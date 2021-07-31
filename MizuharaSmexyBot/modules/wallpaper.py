@@ -1,8 +1,8 @@
 from random import randint
 
 import requests as r
-from LaylaRobot import SUPPORT_CHAT, WALL_API, dispatcher
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
+from MizuharaSmexyBot import SUPPORT_CHAT, WALL_API, dispatcher
+from MizuharaSmexyBot.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
