@@ -1,4 +1,4 @@
-from MizuharaSmextBot import LOAD, LOGGER, NO_LOAD
+from MizuharaSmexyBot import LOAD, LOGGER, NO_LOAD
 
 
 def __list_all_modules():
