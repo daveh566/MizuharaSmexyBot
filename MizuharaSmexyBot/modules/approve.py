@@ -1,11 +1,11 @@
 import html
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
-from LaylaRobot import dispatcher, DRAGONS
-from LaylaRobot.modules.helper_funcs.extraction import extract_user
+from MizuharaSmexyBot.modules.disable import DisableAbleCommandHandler
+from MizuharaSmexyBot import dispatcher, DRAGONS
+from MizuharaSmexyBot.modules.helper_funcs.extraction import extract_user
 from telegram.ext import CallbackContext, CallbackQueryHandler, Filters, run_async
-import LaylaRobot.modules.sql.approve_sql as sql
-from LaylaRobot.modules.helper_funcs.chat_status import user_admin
-from LaylaRobot.modules.log_channel import loggable
+import MizuharaSmexyBot.modules.sql.approve_sql as sql
+from MizuharaSmexyBot.modules.helper_funcs.chat_status import user_admin
+from MizuharaSmexyBot.modules.log_channel import loggable
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import BadRequest
