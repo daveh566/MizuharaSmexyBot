@@ -70,9 +70,9 @@
          "value": "Pain_to_this_world"
       },
       "SUPPORT_CHAT": {
-         "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
+         "description": "Your Telegram support group Username without @",
          "required": true,
-         "value": "AwesomeSupport"
+         "value": "Project_tsukinomi"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
