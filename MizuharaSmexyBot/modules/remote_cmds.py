@@ -5,8 +5,8 @@ from LaylaRobot.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     is_user_in_chat,
 )
-from LaylaRobot.modules.helper_funcs.extraction import extract_user_and_text
-from LaylaRobot.modules.helper_funcs.filters import CustomFilters
+from MizuharaSmexyBot.modules.helper_funcs.extraction import extract_user_and_text
+from MizuharaSmexyBot.modules.helper_funcs.filters import CustomFilters
 from telegram import Update, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
