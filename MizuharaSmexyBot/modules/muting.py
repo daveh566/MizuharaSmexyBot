@@ -1,20 +1,20 @@
 import html
 from typing import Optional
 
-from LaylaRobot import LOGGER, TIGERS, dispatcher
-from LaylaRobot.modules.helper_funcs.chat_status import (
+from MizuharaSmexyBot import LOGGER, TIGERS, dispatcher
+from MizuharaSmexyBot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
     is_user_admin,
     user_admin,
 )
-from LaylaRobot.modules.helper_funcs.extraction import (
+from MizuharaSmexyBot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from LaylaRobot.modules.helper_funcs.string_handling import extract_time
-from LaylaRobot.modules.log_channel import loggable
+from MizuharaSmexyBot.modules.helper_funcs.string_handling import extract_time
+from MizuharaSmexyBot.modules.log_channel import loggable
 from telegram import Bot, Chat, ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
