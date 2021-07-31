@@ -1,9 +1,9 @@
 import html
 import random
-import LaylaRobot.modules.truth_and_dare_string as truth_and_dare_string
-from LaylaRobot import dispatcher
+import MizuharaSmexyBot.modules.truth_and_dare_string as truth_and_dare_string
+from MizuharaSmexyBot import dispatcher
 from telegram import ParseMode, Update, Bot
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
+from MizuharaSmexyBot.modules.disable import DisableAbleCommandHandler
 from telegram.ext import CallbackContext, run_async
 
 @run_async
