@@ -1,8 +1,8 @@
 # © @Mr_Dark_Prince
 import aiohttp
 from pyrogram import filters
-from LaylaRobot import pbot
-from LaylaRobot.pyrogramee.errors import capture_err
+from MizuharaSmexyBot import pbot
+from MizuharaSmexyBot.pyrogramee.errors import capture_err
 
 
 __mod_name__ = "Github"
