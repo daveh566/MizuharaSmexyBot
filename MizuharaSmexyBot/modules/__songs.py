@@ -6,8 +6,8 @@ import requests
 import wget
 from pyrogram import filters
 
-from LaylaRobot import pbot as Jebot
-from LaylaRobot.pyrogramee.dark import get_arg
+from MizuharaSmexyBot import pbot as Jebot
+from MizuharaSmexyBot.pyrogramee.dark import get_arg
 
 
 @Jebot.on_message(filters.command("saavn"))
