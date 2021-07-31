@@ -11,10 +11,10 @@ import aiohttp
 from google_trans_new import google_translator
 from pyrogram import filters
 
-from LaylaRobot import BOT_ID
-from LaylaRobot.helper_extra.aichat import add_chat, get_session, remove_chat
-from LaylaRobot.pyrogramee.pluginshelper import admins_only, edit_or_reply
-from LaylaRobot import pbot as layla
+from MizuharaSmexyBot import BOT_ID
+from MizuharaSmexyBot.helper_extra.aichat import add_chat, get_session, remove_chat
+from MizuharaSmexyBot.pyrogramee.pluginshelper import admins_only, edit_or_reply
+from MizuharaSmexyBot import pbot as Mizuhara
 
 translator = google_translator()
 import requests
@@ -59,7 +59,7 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("layla AI Already Activated In This Chat")
+            await lel.edit("Mizuhara AI Already Activated In This Chat")
             return
         await lel.edit(
             f"layla AI Successfully Added For Users In The Chat {message.chat.id}"
@@ -69,10 +69,10 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("Layla AI Was Not Activated In This Chat")
+            await lel.edit("Mizuhara AI Was Not Activated In This Chat")
             return
         await lel.edit(
-            f"layla AI Successfully Deactivated For Users In The Chat {message.chat.id}"
+            f"Mizuhara AI Successfully Deactivated For Users In The Chat {message.chat.id}"
         )
 
     elif status == "EN" or status == "en" or status == "english":
@@ -114,9 +114,9 @@ async def hmm(client, message):
         message.continue_propagation()
     if chat_id in en_chats:
         test = msg
-        test = test.replace("layla", "Aco")
-        test = test.replace("layla", "Aco")
-        URL = "https://api.affiliateplus.xyz/api/chatbot?message=hi&botname=@LaylaRobot&ownername=@HEROGAMERS1"
+        test = test.replace("Mizuhara", "Aco")
+        test = test.replace("Mizuhara", "Aco")
+        URL = "https://api.affiliateplus.xyz/api/chatbot?message=hi&botname=@MizuharaSmexyBot&ownername=@Pain_to_this_world"
 
         try:
             r = requests.request("GET", url=URL)
@@ -177,9 +177,9 @@ async def hmm(client, message):
         # test = emoji.demojize(test.strip())
 
         # Kang with the credits bitches @InukaASiTH
-        test = test.replace("layla", "Aco")
-        test = test.replace("layla", "Aco")
-        URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@LaylaRobot&ownername=@HEROGAMERS1"
+        test = test.replace("Mizuhara", "Aco")
+        test = test.replace("Mizuhara", "Aco")
+        URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@MizuharaSmexyBot&ownername=@Pain_to_this_world"
         try:
             r = requests.request("GET", url=URL)
         except:
@@ -251,9 +251,9 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("layla", "Aco")
-    test = test.replace("layla", "Aco")
-    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@LaylaRobot&ownername=@HEROGAMERS1"
+    test = test.replace("Mizuhara", "Aco")
+    test = test.replace("Mizuhara", "Aco")
+    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@MizuharaSmexyBot&ownername=@Pain_to_this_world"
     try:
         r = requests.request("GET", url=URL)
     except:
@@ -275,7 +275,7 @@ async def inuka(client, message):
 
 
 @layla.on_message(
-    filters.regex("layla|layla|Layla|Layla|Layla")
+    filters.regex("mizuhara|mizuhara|Mizuhara|Mizuhara|Mizuhara")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -329,9 +329,9 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("layla", "Aco")
-    test = test.replace("layla", "Aco")
-    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@LaylaRobot&ownername=@A_viyu"
+    test = test.replace("mizuhara", "Aco")
+    test = test.replace("mizuhara", "Aco")
+    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@MizuharaSmexyBot&ownername=@Pain_to_this_world"
     try:
         r = requests.request("GET", url=URL)
     except:
