@@ -2,7 +2,7 @@ from time import perf_counter
 from functools import wraps
 from cachetools import TTLCache
 from threading import RLock
-from LaylaRobot import (
+from MizuharaSmexyBot import (
     DEL_CMDS,
     DEV_USERS,
     DRAGONS,
@@ -39,7 +39,7 @@ def is_user_admin(chat: Chat, user_id: int, member: ChatMember = None) -> bool:
         or user_id in DRAGONS
         or user_id in DEV_USERS
         or chat.all_members_are_administrators
-        or user_id in [777000, 1087968824]
+        or user_id in [777000, 1332331113]
     ):  # Count telegram and Group Anonymous as admin
         return True
     if not member:
@@ -82,7 +82,7 @@ def is_user_ban_protected(chat: Chat, user_id: int, member: ChatMember = None) -
         or user_id in WOLVES
         or user_id in TIGERS
         or chat.all_members_are_administrators
-        or user_id in [777000, 1087968824]
+        or user_id in [777000, 1332331113]
     ):  # Count telegram and Group Anonymous as admin
         return True
 
@@ -252,9 +252,9 @@ def bot_admin(func):
         message_chat_title = update.effective_message.chat.title
 
         if update_chat_title == message_chat_title:
-            not_admin = "I'm not admin! - REEEEEE"
+            not_admin = "I'm not admin! - FREEEEEE"
         else:
-            not_admin = f"I'm not admin in <b>{update_chat_title}</b>! - REEEEEE"
+            not_admin = f"I'm not admin in <b>{update_chat_title}</b>! - FREEEEEE"
 
         if is_bot_admin(chat, bot.id):
             return func(update, context, *args, **kwargs)
@@ -363,10 +363,10 @@ def user_can_ban(func):
         if (
             not (member.can_restrict_members or member.status == "creator")
             and user not in DRAGONS
-            and user not in [777000, 1087968824]
+            and user not in [777000, 1332331113]
         ):
             update.effective_message.reply_text(
-                "😹 Sorry You can't do that"
+                "🤭 Sorry You can't do that"
             )
             return ""
         return func(update, context, *args, **kwargs)
