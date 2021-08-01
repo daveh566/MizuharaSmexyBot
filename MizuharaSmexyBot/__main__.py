@@ -25,9 +25,9 @@ from MizuharaSmexyBot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from LaylaRobot.modules import ALL_MODULES
-from LaylaRobot.modules.helper_funcs.chat_status import is_user_admin
-from LaylaRobot.modules.helper_funcs.misc import paginate_modules
+from MizuharaSmexyBot.modules import ALL_MODULES
+from MizuharaSmexyBot.modules.helper_funcs.chat_status import is_user_admin
+from MizuharaSmexyBot.modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -74,6 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
+https://telegra.ph/file/923ca8d23025ee79ec78a.jpg
 Hello, I'M MIZUHARA
 `ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help
 Maintained by @PAIN_TO_this_woorld 🖤
@@ -126,7 +127,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("LaylaRobot.modules." + module_name)
+    imported_module = importlib.import_module("MizuharaSmexyBot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -356,7 +357,7 @@ def help_button(update, context):
 @run_async
 def layla_about_callback(update, context):
     query = update.callback_query
-    if query.data == "layla_":
+    if query.data == "Mizuhara_":
         query.message.edit_text(
             text=""" ℹ️ I'm *Mizuhara*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
@@ -366,7 +367,7 @@ def layla_about_callback(update, context):
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n\n_Mizuhara's licensed under the GNU General Public License v3.0_
-                 \n❍ Awesome Bots @roject_tsukiyomi_started
+                 \n❍ Awesome Bots @project_tsukiyomi_started
                  \n❍ Support Group @project_tsukinomi
                  \n❍ Assistant @Miku_plays.
                  \n❍ Im Private group Manager bot for the groups of @pain_to_this_world so don't add me withouts his permission
@@ -644,7 +645,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 1332331113 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
