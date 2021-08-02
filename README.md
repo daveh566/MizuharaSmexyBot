@@ -23,6 +23,8 @@
 
 ⚡A modular Telegram Python bot running on python3 with a sqlalchemy database.⚡
 
+## Available On Telegram As [@MizuharaSmexyBot](https://t.me/MizuharaSmexyBot)
+
 ## How to setup/deploy.
 
 
@@ -37,7 +39,7 @@ Turn on worker dyno (Don't worry It's free :D) & Webhook
 Now send the bot /start, If it doesn't respond go to https://dashboard.heroku.com/apps/(app-name)/settings and remove webhook and port.
 ```
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FQueenArzoo%2FMizuharaSmexyBot&template=https%3A%2F%2Fgithub.com%2FAnuragSharma080%2FMizuharaSmexybot)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FAnuragSharma080%2FMizuharaSmexyBot&template=https%3A%2F%2Fgithub.com%2FAnuragSharma080%2FMizuharaSmexybot)
 
 
 
