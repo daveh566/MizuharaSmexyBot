@@ -1,4 +1,4 @@
-<h1 align="center"><b>🔥MizuhaaraSmexyBot🔥</b></h1>
+<h1 align="center"><b>🔥MizuhaaraSmexy🔥</b></h1>
 
 <h4 align="center">A Powerful, Smart And Simple Group Manager <br> ... Written with AioGram , Pyrogram and Telethon...</h4>
 <p align='center'>
