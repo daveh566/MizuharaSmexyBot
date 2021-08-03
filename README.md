@@ -10,7 +10,7 @@
 
 ### Click Below Image To Deploy 
 ### 💙Heroku💙
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/AnuragSharma080/MizuharaSmexyBot.git"><img src="https://telegra.ph/file/923ca8d23025ee79ec78a.jpg" width="400"></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/AnuragSharma080/MizuharaSmexyBot.git"><img src="https://telegra.ph/file/923ca8d23025ee79ec78a.jpg" width="600"></a></p>
 <p align="center">
 <a href="https://app.codacy.com/manual/AnuragSharma080/mizuharasmexybot/dashboard"> <img src="https://img.shields.io/codacy/grade/4d58f2a402b54aed8a7d95f7add45a81?color=brightgreen&logo=codacy&logoColor=green&style=for-the-badge" alt="Codacy" /></a>
     <a href="https://github.com/AnuragSharma080/mizuharasmexybot"> <img src="https://img.shields.io/github/repo-size/AnuragSharma080/mizuharasmexybot?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
@@ -24,7 +24,7 @@
 
 ⚡A modular Telegram Python bot running on python3 with a sqlalchemy database.⚡
 
-## Available On Telegram As [@MizuharaSmexyBot](https://t.me/MizuharaSmexyBot)
+## Available On Telegram As [@MizuharaSmexyBot](https://t.me/MizuharaSmexyBot) 💜
 
 ## How to setup/deploy.
 
