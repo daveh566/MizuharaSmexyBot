@@ -213,10 +213,6 @@ For starters click on this button
 
 <a href="https://t.me/Project_Tsukinomi"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
 
-## Credits
-The bot is based on the original work done by [PaulSonOfLars](https://github.com/PaulSonOfLars)
-Also 
-This Bot is cloned Version Of The work Done by [HEROGAMERS1](https://t.me/HEROGAMERS1) In [LaylaRobot](https://github.com/QueenArzoo/LaylaRobot)
 
 
 ## [OWNER PAIN](http://t.me/Pain_to_this_world)
