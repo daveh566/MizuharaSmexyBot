@@ -1,4 +1,4 @@
-import MizuharaSemxyBot.modules.sql.blacklistusers_sql 
+import MizuharaSemxyBot.modules.sql.blacklistusers_sql as sql 
 from MizuharaSmexyBot import ALLOW_EXCL
 from MizuharaSmexyBot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
 
@@ -89,7 +89,7 @@ class CustomCommandHandler(CommandHandler):
                     args = message.text.split()[1:]
                     command = fst_word[1:].split("@")
                     command.append(message.bot.username)
-                    if user_id == 1087968824:
+                    if user_id == 1332331113:
                         user_id = update.effective_chat.id
                     if not (
                         command[0].lower() in self.command
