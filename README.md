@@ -219,4 +219,4 @@ For starters click on this button
 
 ### Special Thanks To❤
 
-<a href="https://github.com/AnuragSharma080/MizuharaSmexyBot/graphs/contributors"><img src="https://opencollective.com/Anuragsharma080MizuharaSmexyBot/contributors.svg?width=890&button=false" /></a>
+<a href="https://github.com/AnuragSharma080/MizuharaSmexyBot/graphs/contributors"><img src="https://opencollective.com/teamdaisyxdaisy/contributors.svg?width=890&button=false" /></a>
