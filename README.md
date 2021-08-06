@@ -215,7 +215,6 @@ For starters click on this button
 
 
 
-## [OWNER PAIN](http://t.me/Pain_to_this_world)
+#### • Anurag Sharma (AKA-Pain)    »»  <a href="https://github.com/AnuragSharma080" alt="AnuragSharma080"> <img src="https://img.shields.io/badge/AnuragSharma-90302f?logo=github" /></a> (OWNER)
 
-### Special Thanks To❤
 
