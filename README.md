@@ -213,7 +213,7 @@ For starters click on this button
 
 <a href="https://t.me/Project_Tsukinomi"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
 
-### ALL DEVS AND SUPPORTERS 
+### ALL DEVS AND Contributors❤
 
 #### • Anurag Sharma (AKA-Pain)    »»  <a href="https://github.com/AnuragSharma080" alt="AnuragSharma080"> <img src="https://img.shields.io/badge/AnuragSharma-90302f?logo=github" /></a> (OWNER)
 
