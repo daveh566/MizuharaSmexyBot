@@ -218,3 +218,12 @@ For starters click on this button
 #### • Anurag Sharma (AKA-Pain)    »»  <a href="https://github.com/AnuragSharma080" alt="AnuragSharma080"> <img src="https://img.shields.io/badge/AnuragSharma-90302f?logo=github" /></a> (OWNER)
 
 #### • Safone »»  <a href="https://github.com/AsmSafone" alt="Safone"> <img src="https://img.shields.io/badge/Safone-30302f?logo=github" /></a> (Dev)
+
+
+## Special Thanks from ❤ To 
+
+> This project exists thanks to these awesome developers and their codes and contributions.
+
+<a href="https://github.com/AnuragSharma080/MizuharaSmexyBot/graphs/contributors"><img src="https://opencollective.com/anuragsharma080/contributors.svg?width=890&button=false" /></a>
+
+> Also Special thanks to you for using bot☘️
