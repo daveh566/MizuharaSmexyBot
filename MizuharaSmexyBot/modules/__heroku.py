@@ -5,7 +5,7 @@ import os
 import heroku3
 import requests
 
-from MizuharaSmexyBot import telethn as borg, HEROKU_APP_NAME, HEROKU_API_KEY, OWNER_ID
+from MizuharaSmexyBot import HEROKU_APP_NAME, HEROKU_API_KEY, OWNER_ID
 from MizuharaSmexyBot.events import register
 
 heroku_api = "https://api.heroku.com"

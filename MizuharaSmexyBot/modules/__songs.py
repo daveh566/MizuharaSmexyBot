@@ -1,6 +1,4 @@
-import os
-
-#Saavn 
+#Saavn
 
 import requests
 import wget
@@ -40,9 +38,6 @@ async def song(client, message):
 #deezer#
 # Credits for @TheHamkerCat
 
-import os
-import aiofiles
-import aiohttp
 from pyrogram import filters
 from LaylaRobot import pbot as Layla
 
@@ -98,7 +93,6 @@ import os
 import aiofiles
 import aiohttp
 from pyrogram import filters
-from LaylaRobot import pbot as ASUNA
 
 ARQ = "https://thearq.tech/"
 

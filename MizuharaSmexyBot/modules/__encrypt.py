@@ -1,7 +1,7 @@
-from MizuharaSmexyBot import telethn as tbot
-import os
-from MizuharaSmexyBot.events import register
 import secureme
+
+from MizuharaSmexyBot.events import register
+
 
 @register(pattern="^/encrypt ?(.*)")
 async def hmm(event):

@@ -1,5 +1,3 @@
-import os
-
 from telethon.tl.types import *
 
 from MizuharaSmexyBot.pyrogramee.pluginshelper import runcmd

@@ -1,8 +1,10 @@
 import sys
 import traceback
 from functools import wraps
-from MizuharaSmexyBot import pbot as app
+
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
+
+from MizuharaSmexyBot import pbot as app
 
 LOG_GROUP_ID = int(-534575324)
 

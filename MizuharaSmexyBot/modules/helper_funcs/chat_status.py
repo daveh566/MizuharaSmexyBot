@@ -1,7 +1,11 @@
-from time import perf_counter
 from functools import wraps
-from cachetools import TTLCache
 from threading import RLock
+from time import perf_counter
+
+from cachetools import TTLCache
+from telegram import Chat, ChatMember, ParseMode, Update
+from telegram.ext import CallbackContext
+
 from MizuharaSmexyBot import (
     DEL_CMDS,
     DEV_USERS,
@@ -12,9 +16,6 @@ from MizuharaSmexyBot import (
     WOLVES,
     dispatcher,
 )
-
-from telegram import Chat, ChatMember, ParseMode, Update
-from telegram.ext import CallbackContext
 
 # stores admemes in memory for 10 min.
 ADMIN_CACHE = TTLCache(maxsize=512, ttl=60 * 10, timer=perf_counter)

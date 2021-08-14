@@ -1,9 +1,5 @@
 from typing import Optional
 
-import MizuharaSmexyBot.modules.sql.rules_sql as sql
-from MizuharaSmexyBot import dispatcher
-from MizuharaSmexyBot.modules.helper_funcs.chat_status import user_admin
-from MizuharaSmexyBot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
@@ -15,6 +11,11 @@ from telegram import (
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import escape_markdown
+
+import MizuharaSmexyBot.modules.sql.rules_sql as sql
+from MizuharaSmexyBot import dispatcher
+from MizuharaSmexyBot.modules.helper_funcs.chat_status import user_admin
+from MizuharaSmexyBot.modules.helper_funcs.string_handling import markdown_parser
 
 
 @run_async

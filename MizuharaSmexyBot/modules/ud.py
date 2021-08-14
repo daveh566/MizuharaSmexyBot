@@ -1,8 +1,9 @@
 import requests
-from MizuharaSmexyBot import dispatcher
-from MizuharaSmexyBot.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
+
+from MizuharaSmexyBot import dispatcher
+from MizuharaSmexyBot.modules.disable import DisableAbleCommandHandler
 
 
 @run_async

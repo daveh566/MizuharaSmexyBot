@@ -1,14 +1,14 @@
+import html
+import io
+import random
+import sys
 import traceback
 
-import requests
-import html
-import random
-import traceback
-import sys
 import pretty_errors
-import io
+import requests
 from telegram import Update, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import CallbackContext, CommandHandler
+
 from MizuharaSmexyBot import dispatcher, DEV_USERS, OWNER_ID
 
 pretty_errors.mono()

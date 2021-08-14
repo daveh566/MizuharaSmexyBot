@@ -1,7 +1,8 @@
 import threading
 
-from MizuharaSmexyBot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, UnicodeText
+
+from MizuharaSmexyBot.modules.sql import BASE, SESSION
 
 
 class AFK(BASE):

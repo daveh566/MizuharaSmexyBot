@@ -1,9 +1,10 @@
 import random
 
-from MizuharaSmexyBot import dispatcher
-from MizuharaSmexyBot.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
+
+from MizuharaSmexyBot import dispatcher
+from MizuharaSmexyBot.modules.disable import DisableAbleCommandHandler
 
 reactions = [
     "( ͡° ͜ʖ ͡°)",

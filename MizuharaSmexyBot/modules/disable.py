@@ -2,9 +2,6 @@ import importlib
 from typing import Union
 
 from future.utils import string_types
-from MizuharaSmexyBot import dispatcher
-from MizuharaSmexyBot.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
-from MizuharaSmexyBot.modules.helper_funcs.misc import is_module_loaded
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,
@@ -14,6 +11,10 @@ from telegram.ext import (
     RegexHandler,
 )
 from telegram.utils.helpers import escape_markdown
+
+from MizuharaSmexyBot import dispatcher
+from MizuharaSmexyBot.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
+from MizuharaSmexyBot.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 

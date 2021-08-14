@@ -4,7 +4,6 @@ import os
 import time
 
 import lyricsgenius
-import requests
 import wget
 from pyrogram import filters
 from pyrogram.types import Message
@@ -12,9 +11,9 @@ from tswift import Song
 from youtube_dl import YoutubeDL
 from youtubesearchpython import SearchVideos
 
+from MizuharaSmexyBot import pbot
 from MizuharaSmexyBot.conf import get_str_key
 from MizuharaSmexyBot.pyrogramee.pluginshelper import get_text, progress
-from MizuharaSmexyBot import pbot
 
 GENIUS = get_str_key("GENIUS_API_TOKEN", None)
 

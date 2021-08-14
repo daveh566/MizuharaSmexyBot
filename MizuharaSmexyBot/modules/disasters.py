@@ -3,11 +3,14 @@ import json
 import os
 from typing import Optional
 
+from telegram import ParseMode, TelegramError, Update
+from telegram.ext import CallbackContext, CommandHandler, run_async
+from telegram.utils.helpers import mention_html
+
 from MizuharaSmexyBot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
-    SUPPORT_CHAT,
     DEMONS,
     TIGERS,
     WOLVES,
@@ -20,9 +23,6 @@ from MizuharaSmexyBot.modules.helper_funcs.chat_status import (
 )
 from MizuharaSmexyBot.modules.helper_funcs.extraction import extract_user
 from MizuharaSmexyBot.modules.log_channel import gloggable
-from telegram import ParseMode, TelegramError, Update
-from telegram.ext import CallbackContext, CommandHandler, run_async
-from telegram.utils.helpers import mention_html
 
 ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "MizuharaSmexyBot/elevated_users.json")
 

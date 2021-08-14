@@ -5,8 +5,9 @@ from faker import Faker
 from faker.providers import internet
 from telethon import events
 
-from MizuharaSmexyBot.pyrogramee.telethonbasics import is_admin
 from MizuharaSmexyBot import telethn as tbot
+from MizuharaSmexyBot.pyrogramee.telethonbasics import is_admin
+
 
 @tbot.on(events.NewMessage(pattern="/fakegen$"))
 async def hi(event):

@@ -1,4 +1,5 @@
-from sqlalchemy import Column, String, Numeric, Boolean
+from sqlalchemy import Column, String, Numeric
+
 from MizuharaSmexyBot.modules.sql import BASE, SESSION
 
 

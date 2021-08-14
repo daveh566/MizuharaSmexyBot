@@ -1,5 +1,3 @@
-import re
-
 import emoji
 
 IBM_WATSON_CRED_URL = "https://api.us-south.speech-to-text.watson.cloud.ibm.com/instances/bd6b59ba-3134-4dd4-aff2-49a79641ea15"
@@ -14,7 +12,6 @@ from pyrogram import filters
 from MizuharaSmexyBot import BOT_ID
 from MizuharaSmexyBot.helper_extra.aichat import add_chat, get_session, remove_chat
 from MizuharaSmexyBot.pyrogramee.pluginshelper import admins_only, edit_or_reply
-from MizuharaSmexyBot import pbot as Mizuhara
 
 translator = google_translator()
 import requests

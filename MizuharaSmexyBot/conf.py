@@ -1,4 +1,5 @@
 from envparse import env
+
 from MizuharaSmexyBot import LOGGER
 
 DEFAULTS = {

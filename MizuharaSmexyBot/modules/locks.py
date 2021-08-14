@@ -1,5 +1,6 @@
 import html
 
+from alphabet_detector import AlphabetDetector
 from telegram import Message, Chat, ParseMode, MessageEntity
 from telegram import TelegramError, ChatPermissions
 from telegram.error import BadRequest
@@ -7,11 +8,11 @@ from telegram.ext import CommandHandler, MessageHandler, Filters
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import mention_html
 
-from alphabet_detector import AlphabetDetector
-
 import MizuharaSmexyBot.modules.sql.locks_sql as sql
 from MizuharaSmexyBot import dispatcher, DRAGONS, LOGGER
+from MizuharaSmexyBot.modules.connection import connected
 from MizuharaSmexyBot.modules.disable import DisableAbleCommandHandler
+from MizuharaSmexyBot.modules.helper_funcs.alternate import send_message, typing_action
 from MizuharaSmexyBot.modules.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
@@ -20,9 +21,7 @@ from MizuharaSmexyBot.modules.helper_funcs.chat_status import (
     user_admin,
 )
 from MizuharaSmexyBot.modules.log_channel import loggable
-from MizuharaSmexyBot.modules.connection import connected
 from MizuharaSmexyBot.modules.sql.approve_sql import is_approved
-from MizuharaSmexyBot.modules.helper_funcs.alternate import send_message, typing_action
 
 ad = AlphabetDetector()
 

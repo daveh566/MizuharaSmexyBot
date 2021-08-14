@@ -8,7 +8,6 @@ from MizuharaSmexyBot.events import register
 from MizuharaSmexyBot import OWNER_ID
 from MizuharaSmexyBot import telethn as tbot
 from MizuharaSmexyBot import *
-from MizuharaSmexyBot import Button, custom, events
 
 hehes = ChatBannedRights(
     until_date=None,
@@ -38,18 +37,6 @@ openhehe = ChatBannedRights(
     change_info=True,
 )
 
-from telethon.tl.types import (
-    ChannelParticipantsAdmins,
-    ChatAdminRights,
-    MessageEntityMentionName,
-    MessageMediaPhoto,
-)
-
-from telethon.tl.functions.channels import (
-    EditAdminRequest,
-    EditBannedRequest,
-    EditPhotoRequest,
-)
 
 async def is_register_admin(chat, user):
     if isinstance(chat, (types.InputPeerChannel, types.InputChannel)):

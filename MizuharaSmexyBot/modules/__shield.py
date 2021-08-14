@@ -20,26 +20,24 @@ import better_profanity
 import emoji
 import nude
 import requests
+from LaylaRobot import telethn as tbot
 from better_profanity import profanity
 from google_trans_new import google_translator
+from pymongo import MongoClient
 from telethon import events
 from telethon.tl.types import ChatBannedRights
 
 from MizuharaSmexyBot import BOT_ID
-from MizuharaSmexyBot.conf import get_int_key, get_str_key
-
-# from LaylaRobot.db.mongo_helpers.nsfw_guard import add_chat, get_all_nsfw_chats, is_chat_in_db, rm_chat
-from MizuharaSmexyBot.pyrogramee.telethonbasics import is_admin
+from MizuharaSmexyBot.conf import get_str_key
 from MizuharaSmexyBot.events import register
-from MizuharaSmexyBot import MONGO_DB_URI 
-from pymongo import MongoClient
 from MizuharaSmexyBot.modules.sql_extended.nsfw_watch_sql import (
     add_nsfwatch,
     get_all_nsfw_enabled_chat,
     is_nsfwatch_indb,
     rmnsfwatch,
 )
-from LaylaRobot import telethn as tbot
+# from LaylaRobot.db.mongo_helpers.nsfw_guard import add_chat, get_all_nsfw_chats, is_chat_in_db, rm_chat
+from MizuharaSmexyBot.pyrogramee.telethonbasics import is_admin
 
 translator = google_translator()
 MUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=False)

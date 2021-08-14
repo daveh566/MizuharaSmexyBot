@@ -1,14 +1,10 @@
-from MizuharaSmexyBot.events import register
+import os
+
+from PIL import Image, ImageDraw, ImageFont
+
 from MizuharaSmexyBot import OWNER_ID
 from MizuharaSmexyBot import telethn as tbot
-import os 
-from PIL import Image, ImageDraw, ImageFont
-import shutil 
-import random, re
-import glob
-import time
-from telethon.tl.types import InputMessagesFilterPhotos
-
+from MizuharaSmexyBot.events import register
 
 FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 

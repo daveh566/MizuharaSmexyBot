@@ -1,16 +1,11 @@
+from LaylaRobot import *
 from LaylaRobot import telethn as tbot
-import os
-
+from LaylaRobot.events import register
 from gtts import gTTS
 from gtts import gTTSError
-from telethon import *
 from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
-
-from LaylaRobot import *
-
-from LaylaRobot.events import register
 
 
 async def is_register_admin(chat, user):

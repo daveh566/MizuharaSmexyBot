@@ -1,18 +1,20 @@
-import os
 import html
+import os
+
 import nekos
 import requests
 from PIL import Image
-from telegram import ParseMode
-from MizuharaSmexyBot import dispatcher, updater
-import MizuharaSmexyBot.modules.sql.nsfw_sql as sql
-from MizuharaSmexyBot.modules.log_channel import gloggable
-from telegram import Message, Chat, Update, Bot, MessageEntity
+from telegram import Update
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CommandHandler, run_async, CallbackContext
-from MizuharaSmexyBot.modules.helper_funcs.filters import CustomFilters
+from telegram.utils.helpers import mention_html
+
+import MizuharaSmexyBot.modules.sql.nsfw_sql as sql
+from MizuharaSmexyBot import dispatcher
 from MizuharaSmexyBot.modules.helper_funcs.chat_status import user_admin
-from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
+from MizuharaSmexyBot.modules.helper_funcs.filters import CustomFilters
+from MizuharaSmexyBot.modules.log_channel import gloggable
+
 
 @run_async
 @user_admin

@@ -1,14 +1,9 @@
+import os
+
+from MizuharaSmexyBot import OWNER_ID, DEV_USERS
 from MizuharaSmexyBot import telethn as tbot
 from MizuharaSmexyBot.events import register
-import os
-import asyncio
-import os
-import time
-from datetime import datetime
-from MizuharaSmexyBot import OWNER_ID, DEV_USERS
-from MizuharaSmexyBot import TEMP_DOWNLOAD_DIRECTORY as path
-from MizuharaSmexyBot import TEMP_DOWNLOAD_DIRECTORY
-from datetime import datetime
+
 water = './MizuharaSmexyBot/resources/yone.jpg'
 client = tbot
 

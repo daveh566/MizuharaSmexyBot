@@ -1,9 +1,10 @@
 import threading
 
-from MizuharaSmexyBot import dispatcher
-from MizuharaSmexyBot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
 from telegram.error import BadRequest, Unauthorized
+
+from MizuharaSmexyBot import dispatcher
+from MizuharaSmexyBot.modules.sql import BASE, SESSION
 
 
 class Federations(BASE):

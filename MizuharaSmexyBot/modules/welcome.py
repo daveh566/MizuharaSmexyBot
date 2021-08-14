@@ -2,11 +2,11 @@ import html
 import random
 import re
 import time
-from functools import partial
 from contextlib import suppress
+from functools import partial
 
-import LaylaRobot.modules.sql.welcome_sql as sql
 import LaylaRobot
+import LaylaRobot.modules.sql.welcome_sql as sql
 from LaylaRobot import (
     DEV_USERS,
     LOGGER,

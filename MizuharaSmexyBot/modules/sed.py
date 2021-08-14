@@ -2,11 +2,12 @@ import sre_constants
 
 import regex
 import telegram
+from telegram import Update
+from telegram.ext import CallbackContext, Filters, run_async
+
 from MizuharaSmexyBot import LOGGER, dispatcher
 from MizuharaSmexyBot.modules.disable import DisableAbleMessageHandler
 from MizuharaSmexyBot.modules.helper_funcs.regex_helper import infinite_loop_check
-from telegram import Update
-from telegram.ext import CallbackContext, Filters, run_async
 
 DELIMITERS = ("/", ":", "|", "_")
 

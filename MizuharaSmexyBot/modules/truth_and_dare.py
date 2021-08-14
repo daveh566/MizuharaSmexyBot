@@ -1,10 +1,13 @@
-import html
 import random
+import random
+
+from telegram import Update
+from telegram.ext import CallbackContext, run_async
+
 import MizuharaSmexyBot.modules.truth_and_dare_string as truth_and_dare_string
 from MizuharaSmexyBot import dispatcher
-from telegram import ParseMode, Update, Bot
 from MizuharaSmexyBot.modules.disable import DisableAbleCommandHandler
-from telegram.ext import CallbackContext, run_async
+
 
 @run_async
 def truth(update: Update, context: CallbackContext):

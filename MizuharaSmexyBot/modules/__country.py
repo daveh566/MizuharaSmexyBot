@@ -1,10 +1,6 @@
-from telethon.tl.functions.photos import GetUserPhotosRequest
-from telethon.tl.functions.users import GetFullUserRequest
-from telethon.tl.types import MessageEntityMentionName
-from telethon.utils import get_input_location
 import flag
-import html, os
 from countryinfo import CountryInfo
+
 from MizuharaSmexyBot import telethn as borg
 from MizuharaSmexyBot.events import register
 

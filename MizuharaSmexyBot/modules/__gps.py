@@ -1,10 +1,8 @@
-import os
-from MizuharaSmexyBot import telethn as tbot
 from geopy.geocoders import Nominatim
-from MizuharaSmexyBot.events import register
-from MizuharaSmexyBot import *
 from telethon import *
-from telethon.tl import *
+
+from MizuharaSmexyBot import telethn as tbot
+from MizuharaSmexyBot.events import register
 
 GMAPS_LOC = "https://maps.googleapis.com/maps/api/geocode/json"
 

@@ -1,5 +1,5 @@
-import re
 import random
+import re
 from html import escape
 
 import telegram
@@ -16,11 +16,13 @@ from telegram.ext import (
 from telegram.utils.helpers import mention_html, escape_markdown
 
 from MizuharaSmexyBot import dispatcher, LOGGER, DRAGONS
+from MizuharaSmexyBot.modules.connection import connected
 from MizuharaSmexyBot.modules.disable import DisableAbleCommandHandler
-from MizuharaSmexyBot.modules.helper_funcs.handlers import MessageHandlerChecker
+from MizuharaSmexyBot.modules.helper_funcs.alternate import send_message, typing_action
 from MizuharaSmexyBot.modules.helper_funcs.chat_status import user_admin
 from MizuharaSmexyBot.modules.helper_funcs.extraction import extract_text
 from MizuharaSmexyBot.modules.helper_funcs.filters import CustomFilters
+from MizuharaSmexyBot.modules.helper_funcs.handlers import MessageHandlerChecker
 from MizuharaSmexyBot.modules.helper_funcs.misc import build_keyboard_parser
 from MizuharaSmexyBot.modules.helper_funcs.msg_types import get_filter_type
 from MizuharaSmexyBot.modules.helper_funcs.string_handling import (
@@ -30,10 +32,6 @@ from MizuharaSmexyBot.modules.helper_funcs.string_handling import (
     markdown_to_html,
 )
 from MizuharaSmexyBot.modules.sql import cust_filters_sql as sql
-
-from MizuharaSmexyBot.modules.connection import connected
-
-from MizuharaSmexyBot.modules.helper_funcs.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 

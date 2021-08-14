@@ -1,9 +1,7 @@
-import asyncio
 from asyncio import sleep
 
 from telethon import events
 from telethon.errors import ChatAdminRequiredError, UserAdminInvalidError
-from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChatBannedRights, ChannelParticipantsAdmins
 
 from MizuharaSmexyBot import telethn, OWNER_ID, DEV_USERS, DRAGONS, DEMONS
@@ -113,9 +111,8 @@ async def zombies(event):
     await cleaning_zombies.edit(del_status)
     
     
-from telethon.tl.types import UserStatusLastMonth, UserStatusLastWeek, ChatBannedRights
+from telethon.tl.types import UserStatusLastMonth, ChatBannedRights
 from LaylaRobot.events import register
-from telethon import *
 from telethon.tl.functions.channels import (EditBannedRequest)
                                             
 

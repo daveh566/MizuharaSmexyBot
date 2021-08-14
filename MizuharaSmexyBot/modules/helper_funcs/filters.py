@@ -1,6 +1,7 @@
-from MizuharaSmexyBot import DEV_USERS, DRAGONS, DEMONS
 from telegram import Message
 from telegram.ext import BaseFilter
+
+from MizuharaSmexyBot import DEV_USERS, DRAGONS, DEMONS
 
 
 class CustomFilters(object):

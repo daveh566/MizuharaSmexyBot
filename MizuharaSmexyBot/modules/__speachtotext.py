@@ -1,17 +1,10 @@
-from MizuharaSmexyBot import telethn as tbot
-import os
-import urllib.request
-from datetime import datetime
-from typing import List
-from typing import Optional
 import requests
-from telethon import *
-from telethon import events
 from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
 from MizuharaSmexyBot import *
+from MizuharaSmexyBot import telethn as tbot
 from MizuharaSmexyBot.events import register
 
 
