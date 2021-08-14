@@ -1,4 +1,6 @@
-import MizuharaSemxyBot.modules.sql.blacklistusers_sql as sql 
+import MizuharaSemxyBot.modules.sql.blacklistusers_sql as sql
+from MizuharaSemxyBot.modules.sql 
+import blacklistusers_sql as sql
 from MizuharaSmexyBot import ALLOW_EXCL
 from MizuharaSmexyBot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
 
