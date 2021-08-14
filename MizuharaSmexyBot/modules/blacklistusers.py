@@ -1,7 +1,8 @@
 # Module to blacklist users and prevent them from using commands by @TheRealPhoenix
 import html
-import MizuharaSmexyBot.modules.sql.blacklistusers_sql as sql
-from MizuharaSmexyBot import (
+import MizuharaSemxyBot.modules.sql.blacklistusers_sql as sql as sql
+from MizuharaSemxyBot.modules.sql 
+import blacklistusers_sql as sql
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
