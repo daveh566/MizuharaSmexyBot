@@ -1,5 +1,5 @@
-from LaylaRobot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
-from LaylaRobot import DRAGONS
+from MizuharaSmexyBot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
+from MizuharaSmexyBot import DRAGONS
 from telethon.tl.types import ChannelParticipantsAdmins
 
 
